@@ -1,10 +1,9 @@
-import { Route, useParams, useRouteMatch } from "react-router-dom"
+import { Route, useParams, Routes} from "react-router-dom"
 
 import Offers from "./Offers"
 
 export const ProductDetails = () => {
   const { id } = useParams()
-  const { path } = useRouteMatch()
 
   return (
     <div className="content">
@@ -18,10 +17,9 @@ export const ProductDetails = () => {
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptate neque harum. Quam facere accusamus exercitationem in quidem mollitia eligendi porro eos voluptates iure incidunt, laudantium sed harum omnis quasi?</p>
         </div>
       </div>
-
-      <Route path={`${path}/offers`}>
-        <Offers />
-      </Route>
+      <Routes>
+        <Route path='offers' element={<Offers/>}/>
+      </Routes>
     </div>
   )
 }
