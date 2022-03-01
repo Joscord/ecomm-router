@@ -1,4 +1,4 @@
-export default function Home() {
+export const Home = () => {
   return (
     <div className="content">
       <h1>Welcome...</h1>

@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function Offers() {
+export const Offers = () => {
   const [items] = useState([
     { title: 'Ninja Hoodie', price: 21.99 },
     { title: 'Ninja Sneakers', price: 34.99 },

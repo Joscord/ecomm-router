@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export default function Products() {
+export const Products = () => {
   return (
     <div className="content">
       <h3>Hoodies</h3>
