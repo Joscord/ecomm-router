@@ -5,7 +5,7 @@ import About from './pages/About'
 import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
